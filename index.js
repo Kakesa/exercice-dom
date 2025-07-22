@@ -31,4 +31,15 @@ button.addEventListener("click", function (){
 
   // Create three Element
 
-  
+  const monButton = document.querySelector(".btn");
+
+  monButton.addEventListener("click", () => {
+    
+    console.log('tu m\'as cliqué !');
+    const title = document.createElement("h1");
+    title.textContent = "Hello DOM";
+
+    title.classList.add("red-color");
+    body.append(title);
+
+  });
