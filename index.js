@@ -31,7 +31,7 @@ button.addEventListener("click", function (){
 
   // Create three Element
 
-  const monButton = document.querySelector(".btn");
+  /*const monButton = document.querySelector(".btn");
 
   monButton.addEventListener("click", () => {
     
@@ -42,4 +42,27 @@ button.addEventListener("click", function (){
     title.classList.add("red-color");
     body.append(title);
 
-  });
+  });*/
+
+// Create four Element
+
+const listeFilms = ["Retour d'un fils", "Avatar", "Titanic", "Star Wars", "Harry Potter"];
+
+const ul = document.createElement("ul");
+
+// Using forEach to create list items
+/*listeFilms.forEach(film => {
+  const li = document.createElement("li");
+  li.textContent = film;
+  ul.appendChild(li);
+});
+body.appendChild(ul);
+*/
+
+// Alternative using a for loop
+for (let i = 0; i < listeFilms.length; i++) {
+  const li = document.createElement("li");
+  li.textContent = listeFilms[i];
+  ul.appendChild(li);
+}
+body.appendChild(ul);
