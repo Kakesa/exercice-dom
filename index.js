@@ -60,9 +60,27 @@ body.appendChild(ul);
 */
 
 // Alternative using a for loop
-for (let i = 0; i < listeFilms.length; i++) {
+/*for (let i = 0; i < listeFilms.length; i++) {
   const li = document.createElement("li");
   li.textContent = listeFilms[i];
   ul.appendChild(li);
 }
-body.appendChild(ul);
+body.appendChild(ul);*/
+
+// Formulaire 
+
+const baliseNom = document.getElementById("film");
+const nom = baliseNom.value;
+
+console.log(`Le nom du film est : ${nom}`);
+
+const movieShow = document.getElementById("vu");
+console.log(`Le film a été vu : ${movieShow.checked}`);
+;
+
+const typeMovies = document.querySelectorAll("input[type=radio]");
+for (let i = 0; i < typeMovies.length; i++) {
+  if (typeMovies[i].checked) {
+    console.log(typeMovies[i].checked);
+  }
+}
