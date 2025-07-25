@@ -84,3 +84,4 @@ for (let i = 0; i < typeMovies.length; i++) {
     console.log(typeMovies[i].checked);
   }
 }
+
